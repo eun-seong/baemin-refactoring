@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const main = require('./main.js');
+const main = require('./main');
+const signin = require('./signin');
 
-router.use('/main', main);
+router.use('/', main);
+router.use('/signin', signin);
 
 module.exports = router;

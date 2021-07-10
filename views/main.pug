@@ -1,1 +1,7 @@
-h1 hello world
+extends layout 
+
+block content  
+    .content 
+        header My배민
+        form(action='/signin' method='get' name='signin_form')
+            input(type='submit' value='로그인')
