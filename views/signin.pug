@@ -1,0 +1,11 @@
+extends layout 
+
+block content  
+    .content 
+        header 로그인
+        form(action='/api/signin' method='post')
+            input(type='text' name='email' placeholder='이메일')
+            input(type='password' name='password' placeholder='비밀번호')
+            input(type='submit' value='로그인')
+
+        a(href='/signup') 회원가입
